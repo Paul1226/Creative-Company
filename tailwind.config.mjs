@@ -6,7 +6,12 @@ export default {
 			colors:{
 				primary: "#515DEF",
 				secondary: "#FBFBFB",
-			}
+				tertiary: "#909090",
+			},
+			gridTemplateColumns: {
+				"3p":"repeat(auto-fill, minmax(300px, 1fr))",
+				"2":"1.3fr 1fr"
+			},
 		},
 	},
 	plugins: [],

@@ -1,0 +1,38 @@
+---
+import FooterHero from "../components/FooterHero.astro";
+---
+
+<section
+  class="bg-primary text-secondary grid grid-col-1 items-start md:grid-cols-2 relative"
+>
+  <div class="flex flex-col gap-4 w-[70%] mx-auto mb-8 mt-[150px]">
+    <p>Hi, There!</p>
+    <h1 class="font-[700] text-4xl leading-tight lg:text-[48px]">
+      We are a growing-up Creative Agency from Indonesia!
+    </h1>
+    <p class="pb-3 lg:text-lg">
+      We provides you with modest and professional design templates that come
+      from the synergy of design and technology
+    </p>
+    <a
+      class="bg-secondary text-black flex items-center px-4 gap-2 w-max rounded-sm"
+      href="#"
+      >Let’s Collaborate <img
+        src="/public/Arrow.svg"
+        alt="Icono de direccion del enlace"
+      /></a
+    >
+  </div>
+
+  <figure class="w-full h-[110vh] lg:h-[140vh] overflow-hidden">
+    <img
+      class="w-full h-full object-cover"
+      src="/public/heroImage.jpg"
+      alt="Imagen hero de la pagina web"
+    />
+  </figure>
+
+  <FooterHero
+    class="bg-secondary text-black md:col-span-2 grid grid-cols-3p gap-3 p-3 lg:absolute lg:bottom-0 lg:flex lg:w-full lg:max-w-[1100px]"
+  />
+</section>

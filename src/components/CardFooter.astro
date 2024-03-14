@@ -1,0 +1,9 @@
+---
+const { imageCard, titleCard, contentCard } = Astro.props;
+---
+
+<article class="flex flex-col gap-2 p-4 rounded-md">
+  <img class="w-[50px] mb-2" src=`${imageCard}` alt="icon of article" />
+  <h3 class="font-[600] text-xl">{titleCard}</h3>
+  <p class="text-tertiary text-sm">{contentCard}</p>
+</article>
