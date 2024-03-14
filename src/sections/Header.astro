@@ -1,0 +1,64 @@
+---
+const listNav = [
+  {
+    name: "Home",
+    href: "#",
+  },
+  {
+    name: "About",
+    href: "#",
+  },
+  {
+    name: "Services",
+    href: "#",
+  },
+  {
+    name: "Portfolio",
+    href: "#",
+  },
+  {
+    name: "Blog",
+    href: "#",
+  },
+];
+---
+
+<header class="header w-full fixed top-0 z-10 py-4">
+  <div class="w-[80%] mx-auto flex items-center justify-between gap-3 flex-wrap">
+    <nav
+      class="flex flex-wrap gap-1 items-center justify-between max-w-[580px] w-full"
+    >
+      <a class="text-[36px] font-[500] text-secondary" href="/"
+        >Liv<span class="text-[#1BCFF6]">ia</span>.</a
+      >
+      <ul class="flex gap-2">
+        {
+          listNav.map((item) => (
+            <li class="">
+              <a class="p-1 text-secondary" href={item.href}>
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <a class="px-4 py-2 bg-primary text-secondary rounded-sm " href="#">Contact Us</a>
+  </div>
+</header>
+
+<style>
+    @keyframes enhance-header {
+      100% {
+        /* background-color: #1B8BFA80; */
+        background-color: #bdbdbd80;
+        backdrop-filter: blur(.5rem);
+        border-radius:0 0 15px 15px;
+      }
+    }
+    .header {
+      animation: enhance-header linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 100px;
+    }
+  </style>
